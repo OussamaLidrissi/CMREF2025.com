@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV – El Idrissi Oussama</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<style>
+	body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.photo-profil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+header {
+  background-color: #2e86de;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 5px;
+}
+
+header p {
+  margin-top: 0;
+}
+
+.contact p, .contact a {
+  margin: 2px 0;
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: white;
+  color: #2e86de;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  background: white;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: #2e86de;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #ccc;
+}
+
+	</style>
+
+  <header>
+    <img src="me1.png" alt="Photo de profil" class="photo-profil" />
+    <h1>El Idrissi Oussama</h1>
+    <p>Analyste de données / Data Scientist</p>
+    <div class="contact">
+      <p>📞 +212 632 778 081</p>
+      <p>📧 elidrissioussama99@gmail.com</p>
+      <p>🌐 <a href="https://oussamalidrissi.github.io/OussamaELidrissi.github.io/">Mon site web</a></p>
+      <p>💼 <a href="https://www.linkedin.com/oussama-el-idrissi99">LinkedIn</a></p>
+      <p>📍 Tanger, Maroc</p>
+    </div>
+    <button onclick="telechargerCV()">📄 Télécharger le CV</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>🎓 Éducation</h2>
+      <ul>
+        <li><strong>2021 – 2023 :</strong> Master – Systèmes intelligents, FPL Larache</li>
+        <li><strong>2017 – 2021 :</strong> Licence – Mathématiques & Informatique, FPL Larache</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🛠 Compétences</h2>
+      <ul>
+        <li>SQL (SQL Server, MySQL)</li>
+        <li>Python (Pandas, NumPy, MatPlotLib)</li>
+        <li>Machine Learning</li>
+        <li>Java (Spring Boot)</li>
+        <li>HTML, CSS, JavaScript</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📁 Projets</h2>
+      <h3>Analyse COVID-19 (SQL)</h3>
+      <p>Analyse de données sur la pandémie, utilisation de CTE et vues pour la visualisation.</p>
+      <h3>Système de recommandation de cours (Python, ML)</h3>
+      <p>Filtrage collaboratif, similarité cosinus, TensorFlow.</p>
+      <h3>Nettoyage de données (SQL)</h3>
+      <p>Détection des doublons dans NashvilleHousing avec ROW_NUMBER().</p>
+    </section>
+
+    <section>
+      <h2>💼 Expérience professionnelle</h2>
+      <h3>Développeur Web Java – Freelance</h3>
+      <p>APIs REST, Spring Boot, ORM (Hibernate), Front-end HTML/CSS/JS</p>
+      <h3>Assistant des ventes – MN Fourniture, Tanger</h3>
+      <p>Gestion de stock, enregistrements de ventes, stratégies Excel</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 – El Idrissi Oussama</p>
+  </footer>
+
+  <script>
+    function telechargerCV() {
+      window.open("cv_elidrissi.pdf");
+    }
+  </script>
+</body>
+</html>
